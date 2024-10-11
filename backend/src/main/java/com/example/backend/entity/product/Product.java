@@ -1,14 +1,16 @@
 package com.example.backend.entity.product;
 
 import com.example.backend.entity.Base;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+//import lombok.AllArgsConstructor;
+//import lombok.Getter;
+//import lombok.NoArgsConstructor;
+//import lombok.Setter;
+import lombok.*;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Optional;
 
 @Entity
 @Table(name = "product")
@@ -16,6 +18,7 @@ import java.io.Serializable;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 @EntityListeners(AuditingEntityListener.class)
 public class Product extends Base implements Serializable {
 

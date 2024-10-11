@@ -3,6 +3,9 @@ package com.example.backend.entity.bill;
 import com.example.backend.entity.Base;
 import com.example.backend.entity.user.Customer;
 import com.example.backend.entity.user.Staff;
+//import lombok.AllArgsConstructor;
+//import lombok.Data;
+//import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,6 +13,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 @Entity
 @EntityListeners(AuditingEntityListener.class)
@@ -63,5 +67,7 @@ public class Bill extends Base implements Serializable {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "staff_id", referencedColumnName = "id")
     private Staff staff;
+
+
 
 }

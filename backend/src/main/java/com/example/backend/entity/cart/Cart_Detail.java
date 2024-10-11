@@ -2,12 +2,18 @@ package com.example.backend.entity.cart;
 
 import com.example.backend.entity.Base;
 import com.example.backend.entity.product.Product_Detail;
+import lombok.*;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 @Table (name = "cart_detail")
 @EntityListeners(AuditingEntityListener.class)
 public class Cart_Detail extends Base implements Serializable {

@@ -1,17 +1,23 @@
 package com.example.backend.entity.bill;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+//import lombok.AllArgsConstructor;
+//import lombok.Data;
+//import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 
-@Data
+//@Data
 @Entity
+//@NoArgsConstructor
+//@AllArgsConstructor
+@Table(name = "status")
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "status")
+@Getter
+@Setter
 @EntityListeners(AuditingEntityListener.class)
 public class Status {
     @Id
@@ -21,4 +27,7 @@ public class Status {
 
     @Column(name = "name_status",columnDefinition = "varchar(50) null")
     private String name_status;
+
+
+
 }

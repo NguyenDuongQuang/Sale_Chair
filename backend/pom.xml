@@ -11,10 +11,10 @@
     </parent>
 
     <groupId>com.example</groupId>
-    <artifactId>be_api_web</artifactId>
+    <artifactId>backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>be_api_web</name>
-    <description>be_api_web</description>
+    <name>backend</name>
+    <description>backend</description>
 
     <properties>
         <java.version>11</java.version>
@@ -30,12 +30,6 @@
             <groupId>io.github.cdimascio</groupId>
             <artifactId>dotenv-java</artifactId>
             <version>2.3.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.hibernate.validator</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>6.2.5.Final</version>
         </dependency>
 
         <dependency>
@@ -117,11 +111,11 @@
             <scope>runtime</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.projectlombok</groupId>-->
+<!--            <artifactId>lombok</artifactId>-->
+<!--            <optional>true</optional>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -186,10 +180,10 @@
             <version>5.1.3</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-security</artifactId>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
@@ -251,11 +245,6 @@
             <artifactId>javax.mail-api</artifactId>
         </dependency>
 
-        <!--        <dependency>-->
-        <!--            <groupId>org.springdoc</groupId>-->
-        <!--            <artifactId>springdoc-openapi-ui</artifactId>-->
-        <!--            <version>1.6.4</version>-->
-        <!--        </dependency>-->
 
 
     </dependencies>
