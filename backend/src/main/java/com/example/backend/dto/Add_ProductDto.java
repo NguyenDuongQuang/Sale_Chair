@@ -1,11 +1,13 @@
 package com.example.backend.dto;
 
-import java.util.List;
+import lombok.Data;
 
+import java.util.List;
+@Data
 public class Add_ProductDto {
-    private String name_product;
-    private Float price;
-    private long category_id;
-    private int quantity;
-    private int status;
+    private String tenSanPham;
+    private Float gia;
+    private long loaiSanPham_id;
+    private int soLuong;
+    private int trangThai;
 }

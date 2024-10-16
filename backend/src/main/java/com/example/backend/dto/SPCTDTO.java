@@ -1,10 +1,14 @@
 package com.example.backend.dto;
 
+import lombok.Data;
+
+@Data
 public class SPCTDTO {
-    private Long productId;
+    private Long sanPhamId;
 
     private Long spctId;
 
-    private int quantity;
+    private int soLuong;
+
 
 }
